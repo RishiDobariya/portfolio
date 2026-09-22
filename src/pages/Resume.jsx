@@ -18,6 +18,24 @@ export default function Resume() {
     text: 'Designed real-world website interfaces and user experiences using UI/UX design principles.',
   }
 
+  const projects = [
+    {
+      title: 'Travel Application',
+      period: 'Figma',
+      text: 'Designed a complete travel application interface in Figma, including user flows, wireframes, and high-fidelity UI screens. Created an intuitive and visually consistent user experience focused on usability, navigation, and modern design principles.',
+    },
+    {
+      title: 'Coffee Shop',
+      period: 'Figma',
+      text: 'Designed a high-fidelity UI for a coffee shop application, covering key customer journeys from product discovery to checkout. Built reusable UI components and maintained a consistent design system to improve scalability and user experience.',
+    },
+    {
+      title: 'Farm House Booking System',
+      period: 'Figma',
+      text: 'Designed mobile and web screens in Figma for a farm house booking platform, covering the end-to-end booking user flow. Applied usability and aesthetic design principles to create user-friendly, consistent interfaces across both platforms.',
+    },
+  ]
+
   return (
     <section id="resume" className="resume section">
       <div className="container section-title" data-aos="fade-up">
@@ -69,7 +87,7 @@ export default function Resume() {
             </div>
 
             <h3 className="resume-title">Projects</h3>
-            {resume.projects.map((project) => (
+            {projects.map((project) => (
               <div className="resume-item" key={project.title}>
                 <h4>{project.title}</h4>
                 <h5>{project.period}</h5>
