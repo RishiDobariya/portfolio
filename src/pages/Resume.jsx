@@ -1,6 +1,16 @@
 import { resume } from '../data/content.js'
 
 export default function Resume() {
+  const educationItems = [
+    resume.education,
+    {
+      title: 'MCA (Master of Computer Application)',
+      period: 'Expected Graduation: 2027',
+      school: 'LJ University',
+      extra: 'SPI: 8.24',
+    },
+  ]
+
   return (
     <section id="resume" className="resume section">
       <div className="container section-title" data-aos="fade-up">
@@ -28,14 +38,16 @@ export default function Resume() {
             </div>
 
             <h3 className="resume-title">Education</h3>
-            <div className="resume-item">
-              <h4>{resume.education.title}</h4>
-              <h5>{resume.education.period}</h5>
-              <p>
-                <em>{resume.education.school}</em>
-              </p>
-              <p>{resume.education.extra}</p>
-            </div>
+            {educationItems.map((education) => (
+              <div className="resume-item" key={education.title}>
+                <h4>{education.title}</h4>
+                <h5>{education.period}</h5>
+                <p>
+                  <em>{education.school}</em>
+                </p>
+                <p>{education.extra}</p>
+              </div>
+            ))}
           </div>
 
           <div className="col-lg-6" data-aos="fade-up" data-aos-delay="200">
