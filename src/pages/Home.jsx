@@ -59,7 +59,7 @@ export default function Home() {
             <div className="hero-chip c2">
               <i className="bi bi-stars"></i>
               <div>
-                <strong>10+</strong>
+                <strong>5+</strong>
                 <span>Projects</span>
               </div>
             </div>
