@@ -20,9 +20,9 @@ export default function About() {
               </div>
             </div>
             <div className="col-lg-8 content">
-              <h2>UI/UX Designer &amp; Graphic Designer.</h2>
+              <h2>UI/UX Designer.</h2>
               <p className="fst-italic py-3">
-                A passionate UI/UX and Graphic Designer with hands-on experience in creating
+                A passionate UI/UX with hands-on experience in creating
                 user-centered designs, prototyping, and branding using Figma and Canva.
               </p>
               <div className="row">
