@@ -28,9 +28,14 @@ export default function Home() {
             </p>
 
             <div className="hero-actions">
-              <Link to="/portfolio" className="btn btn-primary">
+              <a
+                href="https://www.behance.net/rishupatel9"
+                className="btn btn-primary"
+                target="_blank"
+                rel="noreferrer"
+              >
                 View My Work <i className="bi bi-arrow-right"></i>
-              </Link>
+              </a>
               <Link to="/contact" className="btn btn-ghost">
                 Get in Touch
               </Link>
