@@ -9,7 +9,7 @@ export const profile = {
   phone: "7779028820",
   city: "Rajkot, Gujarat, India",
   age: "20",
-  degree: "Bechlers",
+  degree: "Bachelor's",
   email: "rishupatel1011@gmail.com",
   freelance: "Available",
   about:
