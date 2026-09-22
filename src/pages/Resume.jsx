@@ -11,12 +11,20 @@ export default function Resume() {
     },
   ]
 
-  const experience = {
-    title: 'UI/UX Design Intern',
-    period: '3 months',
-    company: 'Triovex Solutions',
-    text: 'Designed real-world website interfaces and user experiences using UI/UX design principles.',
-  }
+  const experiences = [
+    {
+      title: 'UI/UX Design Intern',
+      period: '3 months',
+      company: 'Triovex Solutions',
+      text: 'Designed real-world website interfaces and user experiences using UI/UX design principles.',
+    },
+    {
+      title: 'UI/UX Design Intern',
+      period: '6 months',
+      company: 'Divinetech Solutions',
+      text: 'Designed wireframes and interactive prototypes for digital products, applying user-centered design principles to create intuitive and engaging user experiences.',
+    },
+  ]
 
   const projects = [
     {
@@ -77,14 +85,16 @@ export default function Resume() {
 
           <div className="col-lg-6" data-aos="fade-up" data-aos-delay="200">
             <h3 className="resume-title">Experience</h3>
-            <div className="resume-item">
-              <h4>{experience.title}</h4>
-              <h5>{experience.period}</h5>
-              <p>
-                <em>{experience.company}</em>
-              </p>
-              <p>{experience.text}</p>
-            </div>
+            {experiences.map((experience) => (
+              <div className="resume-item" key={experience.company}>
+                <h4>{experience.title}</h4>
+                <h5>{experience.period}</h5>
+                <p>
+                  <em>{experience.company}</em>
+                </p>
+                <p>{experience.text}</p>
+              </div>
+            ))}
 
             <h3 className="resume-title">Projects</h3>
             {projects.map((project) => (
