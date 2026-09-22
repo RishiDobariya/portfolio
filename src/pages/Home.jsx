@@ -20,7 +20,7 @@ export default function Home() {
               I craft digital experiences.
             </h1>
 
-            <p className="hero-role">UI/UX Designer &amp; Graphic Designer — from Rajkot, India</p>
+            <p className="hero-role">UI/UX Designer — from Ahmedabad, India</p>
 
             <p className="hero-desc">
               I design user-centered interfaces and bold brand visuals that blend creativity with
