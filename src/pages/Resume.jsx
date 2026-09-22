@@ -11,6 +11,13 @@ export default function Resume() {
     },
   ]
 
+  const experience = {
+    title: 'UI/UX Design Intern',
+    period: '3 months',
+    company: 'Triovex Solutions',
+    text: 'Designed real-world website interfaces and user experiences using UI/UX design principles.',
+  }
+
   return (
     <section id="resume" className="resume section">
       <div className="container section-title" data-aos="fade-up">
@@ -51,6 +58,16 @@ export default function Resume() {
           </div>
 
           <div className="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+            <h3 className="resume-title">Experience</h3>
+            <div className="resume-item">
+              <h4>{experience.title}</h4>
+              <h5>{experience.period}</h5>
+              <p>
+                <em>{experience.company}</em>
+              </p>
+              <p>{experience.text}</p>
+            </div>
+
             <h3 className="resume-title">Projects</h3>
             {resume.projects.map((project) => (
               <div className="resume-item" key={project.title}>
